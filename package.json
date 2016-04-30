@@ -14,5 +14,8 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lisajian/berkeley-builds-2016/issues"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
   }
 }
