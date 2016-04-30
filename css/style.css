@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+.tile {
+    width: 600px;
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.tile img {
+    width: inherit;
+    transform: translateY(-25%);
+}
+
+.tile-text {
+
+}
