@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/lisajian/berkeley-builds-2016#readme",
   "dependencies": {
-    "formidable": "^1.0.17"
+  "formidable": "^1.0.17"
   }
 }
