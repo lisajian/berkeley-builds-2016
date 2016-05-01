@@ -24,6 +24,7 @@ $(document).ready(function() {
     function populate(index, item, dest) {
         var obj = JSON.parse(item);
         var title = "<div class=\"titles\" id=\"title" + index + "\">" + obj.title + "</div>";
+        var dateSeg = "<div class=\"dates\" id=\"date" + index + "\">" + obj.date + "</div>";
         var textSeg = "";
         var imgSeg = "";
         var wrapperHead = "<div class=\"entry\" id=\"entry" + index + "\">";
@@ -35,13 +36,13 @@ $(document).ready(function() {
             var src = obj.img;
             imgSeg = "<img class=\"imgs\" id=\"img" + index + "\" src=\"" + src + "\"/>";
         }
-        $(dest).prepend("\n" + wrapperHead + "\n" + title + "\n" + imgSeg + "\n" + textSeg + "\n" + wrapperTail);
+        $(dest).prepend("\n" + wrapperHead + "\n" + title + "\n" + dateSeg + "\n" + imgSeg + "\n" + textSeg + "\n" + wrapperTail);
     }
 
     $('input#submit').click(function() {
         var d = new Date();
         currentDate = d.toDateString();
-        var title = $('#title').val();
+        var title = $('#title-input').val();
         var text = $('textarea#story').val();
         var file = $('#picture').val();
         if (file) {
@@ -58,11 +59,12 @@ $(document).ready(function() {
         var info = JSON.stringify(obj);
         if (title && (text || file)) {
             localStorage.setItem(clicks, info);
-            $('#title').val("");
+            $('#title-input').val("");
             $('textarea#story').val("");
             $('#picture').val("");
             EL("upload-img").src = "";
             $('#upload-img').css("height", "300px");
+            populate(clicks, localStorage.getItem(clicks), "#result");
             clicks++;
         }
     });
