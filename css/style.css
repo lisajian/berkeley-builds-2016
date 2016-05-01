@@ -65,9 +65,15 @@ a {
     margin-bottom: 10px;
 }
 
-input {max-width: 100%;width: 100%;}
+input {
+    max-width: 100%;
+    width: 100%;
+}
 
-textarea {width: 100%;margin-top: 10px;}
+textarea {
+    width: 100%;
+    margin-top: 10px;
+}
 
 .entry {
     margin-top: 25px;
@@ -97,4 +103,28 @@ textarea {width: 100%;margin-top: 10px;}
     float: left;
     margin-bottom: 25px;
     margin-right: 25px;
+}
+
+#sidebar {
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    overflow: scroll;
+}
+
+#datasets {
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: gray;
+    padding-top: 50px;
+    margin-left: 15px;
+    border-right: solid 1px gray;
+    height: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.data {
+    margin-bottom: 15px;
 }
