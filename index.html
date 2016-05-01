@@ -1,8 +1,25 @@
 <!DOCTYPE HTML>
-<html>
+<html manifest="demo.appcache">
     <head>
+		<script type="text/javascript">
+			function isValid(){
+			var user = document.getElementById('user').value;
+			var password = document.getElementById('password').value;
+			if (password == "password" && user == "user")
+			{window.location.href = "./templates/landing.html";}
+			else
+			{alert('Wrong Password')}
+			}
+		</script>
     </head>
     <body>
-        <a href="./templates/landing.html">Landing Page</a>
+		<form name="login" action="">
+		User:
+		<input type="text" id="user" name="user">
+		Password:
+		<input type="password" id="password" name="password">
+		<input type="button" value="Log in" onclick="isValid();">
+		</form>
+<!--        <a href="./templates/landing.html">Landing Page</a> -->
     </body>
 </html>
