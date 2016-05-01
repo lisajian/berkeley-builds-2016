@@ -1,8 +1,20 @@
 <!DOCTYPE HTML>
 <html>
-    <head></head>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="../server2.js"></script>
+    </head>
     <body>
-        <!-- Write new entry -->
+
+            <div>Title:</div>
+            <input type="text" id="title" name="title" placeholder="Title your story" />
+            <div>Story:</div>
+            <textarea id="story" name="story" placeholder="Type your story here"></textarea>
+            <div>Picture:</div>
+            <input type="file" id="picture" name="picture" />
+            <div><input type="submit" id="submit" value="Add Story" /></div>
+
+        <div id="result"></div>
         <!-- Populate images -->
     </body>
 </html>
