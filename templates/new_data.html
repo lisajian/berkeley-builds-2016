@@ -1,5 +1,30 @@
 <!DOCTYPE HTML>
 <html>
-    <head></head>
-    <body></body>
+    <head>
+      <script src="../js/handsontable.full.js"></script>
+      <link rel="stylesheet" media="screen" href="../css/handsontable.full.css">
+      <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    </head>
+    <body>
+      <div id="center">
+        <div class="instr">Insert your data below</div>
+        <div data-jsfiddle="example">
+          <div id="example" class="hot"></div>
+        </div>
+        <script data-jsfiddle="example">
+          var data = [
+            // ["", "Year", "Yield", "Profit", "Liza"],
+            ["", "", "", "", ""],
+            ["", "", "", "", ""],
+            ["", "", "", "", ""]
+          ];
+
+          var container = document.getElementById('example');
+          var hot = new Handsontable(container, {
+            data: data,
+            colHeaders: ["Date (MM/YYYY)", "Product Name", "Units Produced", "Price Per Unit Sold", "Currency", "Liza"],
+          });
+        </script>
+      </div>
+    </body>
 </html>
