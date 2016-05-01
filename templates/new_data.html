@@ -1,30 +1,17 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-      <script src="../js/handsontable.full.js"></script>
-      <link rel="stylesheet" media="screen" href="../css/handsontable.full.css">
+<head>
       <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-    </head>
-    <body>
-      <div id="center">
-        <div class="instr">Insert your data below</div>
-        <div data-jsfiddle="example">
-          <div id="example" class="hot"></div>
-        </div>
-        <script data-jsfiddle="example">
-          var data = [
-            // ["", "Year", "Yield", "Profit", "Liza"],
-            ["", "", "", "", ""],
-            ["", "", "", "", ""],
-            ["", "", "", "", ""]
-          ];
-
-          var container = document.getElementById('example');
-          var hot = new Handsontable(container, {
-            data: data,
-            colHeaders: ["Date (MM/YYYY)", "Product Name", "Units Produced", "Price Per Unit Sold", "Currency", "Liza"],
-          });
-        </script>
-      </div>
-    </body>
+	  <link rel="stylesheet" type="text/css" href="../css/table.css"/>
+	  <script src="../js/table.js"></script>
+</head>
+<body>
+<div class="instr">Insert your data below</div>
+<div id="center">
+<table></table>
+<button onclick="myFunction()">Add Height</button>
+<button onclick="myFunction()">Subtract Height</button>
+<button onclick="myFunction()">Add Width</button>
+<button onclick="myFunction()">Subtract Width</button>
+</body>
 </html>
