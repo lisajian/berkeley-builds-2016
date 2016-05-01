@@ -142,6 +142,11 @@ textarea {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    display: none;
+}
+
+.plot-visible {
+    display: block;
 }
 
 #content {
@@ -152,4 +157,5 @@ textarea {
 }
 
 #plot0 {
+
 }
