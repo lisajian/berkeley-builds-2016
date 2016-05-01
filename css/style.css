@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: gray;
+}
+
 .tile {
     width: 600px;
     height: 150px;
