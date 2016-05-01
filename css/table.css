@@ -24,8 +24,16 @@ input:not(:focus) {
     text-align: right;
 }
 
+#center_data {
+	text-align: center;
+}
+
 table {
-    border-collapse: collapse;  
+    border-collapse: collapse;
+	margin: 0 auto;
+    width: 60%;
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 
 td {
