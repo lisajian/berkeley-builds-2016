@@ -136,3 +136,20 @@ textarea {
 .data {
     margin-bottom: 15px;
 }
+
+.plot {
+    width: calc(100% - 400px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#content {
+    /* position: fixed; */
+    top: 0%;
+    right: 0%;
+    padding-left: 350px;
+}
+
+#plot0 {
+}
