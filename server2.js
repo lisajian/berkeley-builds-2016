@@ -23,17 +23,19 @@ $(document).ready(function() {
      * populate DEST with the title, text, and img. */
     function populate(index, item, dest) {
         var obj = JSON.parse(item);
-        var title = "<div id=\"title" + index + "\">" + obj.title + "</div>";
+        var title = "<div class=\"titles\" id=\"title" + index + "\">" + obj.title + "</div>";
         var textSeg = "";
         var imgSeg = "";
+        var wrapperHead = "<div class=\"entry\" id=\"entry" + index + "\">";
+        var wrapperTail = "</div>";
         if (obj.text) {
-            textSeg = "<div id=\"text" + index + "\">" + obj.text + "</div>";
+            textSeg = "<div class=\"texts\" id=\"text" + index + "\">" + obj.text + "</div>";
         }
         if (obj.img) {
             var src = obj.img;
-            imgSeg = "<img id=\"img" + index + "\" src=\"" + src + "\"/>";
+            imgSeg = "<img class=\"imgs\" id=\"img" + index + "\" src=\"" + src + "\"/>";
         }
-        $(dest).prepend("\n" + title + "\n" + imgSeg + "\n" + textSeg);
+        $(dest).prepend("\n" + wrapperHead + "\n" + title + "\n" + imgSeg + "\n" + textSeg + "\n" + wrapperTail);
     }
 
     $('input#submit').click(function() {
@@ -56,14 +58,12 @@ $(document).ready(function() {
         var info = JSON.stringify(obj);
         if (title && (text || file)) {
             localStorage.setItem(clicks, info);
-            // $('#result').prepend(localStorage.getItem(clicks));
             $('#title').val("");
             $('textarea#story').val("");
             $('#picture').val("");
             EL("upload-img").src = "";
             $('#upload-img').css("height", "300px");
             clicks++;
-            // Window.location.reload();
         }
     });
 
