@@ -1,0 +1,25 @@
+CACHE MANIFEST
+/css/roboto.css
+/css/robotocon.css
+/css/style.css
+/css/table.css
+/img/demo.jpg
+/img/plot0.jpg
+/js/script.js
+/js/server2.js
+/js/table.js
+/php/upload.php
+/templates/data.html
+/templates/existing_data.html
+/templates/landing.html
+/templates/new_data.html
+/templates/story.html
+/templates/upload_data.html
+/index.html
+
+
+NETWORK:
+*
+
+FALLBACK:
+/html/ /offline.html
