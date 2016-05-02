@@ -12,6 +12,11 @@ body {
     margin-bottom: 75px;
 }
 
+#wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+
 .instr {
     margin: 0 auto;
     width: 600px;
@@ -72,6 +77,10 @@ a:visited {
 input {
     max-width: 100%;
     width: 100%;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: gray;
+    height: 20px;
 }
 
 .inp {
@@ -81,6 +90,8 @@ input {
 textarea {
     width: 100%;
     margin-top: 10px;
+    font-size: 14px;
+    color: gray;
 }
 
 .entry {
